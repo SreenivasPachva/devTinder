@@ -7,5 +7,6 @@ function myFun(a,b)
 
 let a = 100
 const b  = 300
+const c =  400
 
 module.exports = {myFun}
