@@ -8,24 +8,24 @@ const express = require("express");
 const app = express();
 
 
-app.use("/test",(req,res)=>{
-    res.send("hello from the server test")
-})
-
-
-app.use("/hello",(req,res)=>{
-    res.send("hello Hello gelo")
-})
-
-
-app.use("/super",(req,res)=>{
-    res.send("hello super")
-})
 
 app.listen(3000,()=>{
 
     console.log("server running successfully ")
 })
+
+app.get("/user",(req,res)=>{
+    res.send({name:"Sreenivas",prof:"Software"})
+})
+
+
+app.post("/user",(req,res)=>{
+
+    res.send("usr data submiited successfully")
+})
+
+
+
 
 
 // express = require("express")
